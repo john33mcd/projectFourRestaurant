@@ -1,6 +1,38 @@
 {% extends 'restaurant/main.html' %}
 {% block content %}
-<div>
-    <p> hello this is some more sample input </p>
+<div class="container">
+    <h1 class="header-bar"> Reservations ! </h1>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Party size:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">How many tables do you require?:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <!--Date and Time picker in popup -->
+        <div class="form-group pmd-textfield pmd-textfield-floating-label">
+            <label for="regular1" class="control-label">Select Date and Time</label>
+            <input type="text" data-datepicker-popup="true" data-datepicker="datepicker-popup-inline"
+                class="form-control" data-target="#datepicker-dialog" data-toggle="modal" />
+        </div>
+    </form>
 </div>
 {% endblock content %}
